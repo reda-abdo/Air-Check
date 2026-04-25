@@ -364,7 +364,8 @@
                 <a href="#industries" class="text-gray-700 hover:text-green-600 transition">Industries</a>
                 <a href="#contact" class="text-gray-700 hover:text-green-600 transition">Contact</a>
                 <button onclick="document.getElementById('contactForm').scrollIntoView({behavior: 'smooth'});"
-                    class="cta-button text-white px-6 py-2 rounded-lg font-600">Request Demo</button>
+                    class="cta-button text-white px-6 py-2 rounded-lg font-600">
+                    Request a Demo</button>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -403,9 +404,11 @@
                         Works with lightweight connectivity — no heavy internet dependency required.
                     </p>
                     <div class="flex gap-4 flex-wrap pt-4">
-                        <button onclick="document.getElementById('contactForm').scrollIntoView({behavior: 'smooth'});"
+                        <button
                             class="bg-white text-green-600 px-8 py-3 rounded-lg font-700 hover:bg-gray-100 transition shadow-lg hover:shadow-xl">
-                            Request a Demo
+                            <a href="https://air-check-pro-1.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                Live Demo
+                            </a>
                         </button>
                         <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});"
                             class="border-2 border-white text-white px-8 py-3 rounded-lg font-700 hover:bg-white hover:text-green-600 transition shadow-lg">
@@ -417,7 +420,7 @@
                     <div class="relative w-full max-w-md">
                         <div class="hero-image-blob"></div>
                         <div class="hero-image-wrapper">
-                            <img src="Image2.jpg"
+                            <img src="Image 2.png"
                                 alt="AirCheck Smart Attendance System - Laptop Dashboard, Smartphone, and Device"
                                 class="w-full h-auto">
                         </div>
@@ -1243,15 +1246,17 @@
             <div class="flex gap-4 justify-center flex-wrap">
 
                 <!-- PRIMARY 🔥 -->
-                <button onclick="document.getElementById('contactForm').scrollIntoView({behavior: 'smooth'});"
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});"
                     class="bg-gradient-to-r from-green-500 to-cyan-500 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:scale-105 hover:shadow-2xl transition duration-300">
                     Start Free Pilot for Your Company
                 </button>
 
                 <!-- SECONDARY -->
-                <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});"
+                <button
                     class="border-2 border-green-600 text-green-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-600 hover:text-white transition duration-300">
-                    Request a Live Demo
+                    <a href="https://air-check-pro-1.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        Request a Live Demo
+                    </a>
                 </button>
 
             </div>
@@ -1416,7 +1421,14 @@
                 <div class="flex gap-4">
                     <!-- <a href="#" class="text-gray-500 hover:text-white transition"><i class="fab fa-twitter"></i></a> -->
                     <a href="https://www.linkedin.com/in/air-check-a35924403?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
-                        class="text-gray-500 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                        target="_blank" class="text-gray-500 hover:text-white transition"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/share/1H27VoabxF/?mibextid=wwXIfr" target="_blank"
+                        class="text-gray-500 hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                    <a href="https://air-check-pro-1.netlify.app/" target="_blank" rel="noopener noreferrer"
+                        class="text-gray-500 hover:text-white transition">
+                        <i class="fa-brands fa-chrome"></i>
+                    </a>
                     <!-- <a href="#" class="text-gray-500 hover:text-white transition"><i class="fab fa-github"></i></a> -->
                 </div>
             </div>
@@ -1526,30 +1538,6 @@
         // Set default industry
         document.querySelector('[onclick*="universities"]').classList.add('active');
 
-        // Form Submission
-        // document.getElementById('contactForm').addEventListener('submit', function (e) {
-        //     e.preventDefault();
-
-        //     const name = document.getElementById('contactName').value;
-        //     const email = document.getElementById('contactEmail').value;
-        //     const org = document.getElementById('contactOrg').value;
-        //     const message = document.getElementById('contactMessage').value;
-
-        //     // Simulate form submission (In real app, send to backend)
-        //     console.log('Form submitted:', { name, email, org, message });
-
-        //     // Show success message
-        //     const successMsg = document.getElementById('successMessage');
-        //     successMsg.style.display = 'flex';
-
-        //     // Reset form
-        //     this.reset();
-
-        //     // Hide success message after 5 seconds
-        //     setTimeout(() => {
-        //         successMsg.style.display = 'none';
-        //     }, 5000);
-        // });
         document.getElementById('contactForm').addEventListener('submit', async function (e) {
             e.preventDefault();
 
